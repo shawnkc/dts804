@@ -11,6 +11,7 @@
 		29FF28E0288EF229005CE4C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF28DF288EF229005CE4C7 /* ContentView.swift */; };
 		29FF28E2288EF22A005CE4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FF28E1288EF22A005CE4C7 /* Assets.xcassets */; };
 		29FF28E5288EF22A005CE4C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FF28E4288EF22A005CE4C7 /* Preview Assets.xcassets */; };
+		29FF28F2288EF568005CE4C7 /* dts804package in Frameworks */ = {isa = PBXBuildFile; productRef = 29FF28F1288EF568005CE4C7 /* dts804package */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FF28F2288EF568005CE4C7 /* dts804package in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = dts804;
+			packageProductDependencies = (
+				29FF28F1288EF568005CE4C7 /* dts804package */,
+			);
 			productName = dts804;
 			productReference = 29FF28DA288EF229005CE4C7 /* dts804.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 29FF28D1288EF229005CE4C7;
+			packageReferences = (
+				29FF28F0288EF568005CE4C7 /* XCRemoteSwiftPackageReference "dts804package" */,
+			);
 			productRefGroup = 29FF28DB288EF229005CE4C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29FF28F0288EF568005CE4C7 /* XCRemoteSwiftPackageReference "dts804package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:shawnkc/dts804package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29FF28F1288EF568005CE4C7 /* dts804package */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29FF28F0288EF568005CE4C7 /* XCRemoteSwiftPackageReference "dts804package" */;
+			productName = dts804package;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29FF28D2288EF229005CE4C7 /* Project object */;
 }

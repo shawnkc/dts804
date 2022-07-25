@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import dts804package
 
 @main
 struct dts804App: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+		}
+	}
+
+	init() {
+		let dts = dts804package()
+		dts.loadFile()
+	}
 }
